@@ -29,8 +29,8 @@ The formula syntax makes use of the following symbols;
 
 - | : or
 - & : and
-- > : implication
-- - : negation
+- \> : implication
+- \- : negation
 - = : logical equivalence
 
 Opening and closing brackets are mandatory. 
@@ -74,4 +74,4 @@ Known bugs
 ----------
 Despite fixing attempts, there still exist issues with backtracking. 
 I have not been able to resolve these problems. 
-Consequently, some proofs, i.e. `(((p=q)=r)=(p=(q=r)))` will not be able to deduce $F, where others, i.e. `((p>q)=(-q>-p))`, are. 
+Consequently, some proofs, i.e. `(((p=q)=r)=(p=(q=r)))` will not be able to deduce `$F` (i.e. proof by contradiction), where others, i.e. `((p>q)=(-q>-p))`, are. 
